@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South Hill Futures — Incorporation Study</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">South Hill Futures</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#what-is">What Is Incorporation?</a></li>
+        <li><a href="#possibilities">What Could It Look Like?</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Get Involved</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- OPEN HOUSE BANNER -->
+  <div id="open-house-banner">
+    <p>&#128197; <strong>Open House — Wednesday, May 13, 2026</strong> &nbsp;|&nbsp; Join us to learn more and share your voice. <a href="#contact">Details below &#8595;</a></p>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Community Outreach &amp; Research</p>
+      <h1>What Future Do You Want<br>for South Hill?</h1>
+      <p class="hero-sub">We're a University of Washington studio group partnering with Liveable City Year @ UW and Pierce County to explore what incorporation could mean for South Hill, WA — and to hear directly from you.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#about">Learn More</a>
+        <a class="btn btn-outline" href="#contact">Share Your Voice</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">&#8595;</div>
+  </section>
+
+  <!-- PARTNERS STRIP -->
+  <section id="partners">
+    <div class="container">
+      <p class="partners-label">A collaboration between</p>
+      <div class="partners-logos">
+        <div class="partner-item">
+          <span class="partner-icon">🎓</span>
+          <span>UW Department of Urban Design &amp; Planning</span>
+        </div>
+        <div class="partner-divider"></div>
+        <div class="partner-item">
+          <span class="partner-icon">🏙️</span>
+          <span>Liveable City Year @ UW</span>
+        </div>
+        <div class="partner-divider"></div>
+        <div class="partner-item">
+          <span class="partner-icon">📋</span>
+          <span>Pierce County</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">About the Project</p>
+        <h2>Who We Are &amp; What We're Doing</h2>
+      </div>
+      <div class="two-col">
+        <div class="col-text">
+          <p>We are a studio group from the University of Washington working alongside <strong>Liveable City Year @ UW</strong> and <strong>Pierce County</strong> to study the feasibility and community readiness for South Hill, WA to incorporate as its own city.</p>
+          <p>South Hill is one of the largest unincorporated communities in Washington State — with a population of over 70,000 residents — yet it currently operates without the full suite of local government services that incorporated cities provide.</p>
+          <p>Our goal is not to advocate for a particular outcome, but to <strong>inform and listen</strong>. We want residents to have access to clear, accurate information and a platform to make their voices heard.</p>
+        </div>
+        <div class="col-cards">
+          <div class="info-card">
+            <div class="info-card-num">01</div>
+            <h3>Research</h3>
+            <p>We are gathering data on South Hill's demographics, fiscal landscape, infrastructure, and governance to build a clear picture of current conditions.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-num">02</div>
+            <h3>Outreach</h3>
+            <p>We are conducting surveys, community meetings, and conversations with local stakeholders to understand what residents value and want for their community's future.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-num">03</div>
+            <h3>Analysis</h3>
+            <p>We are examining what incorporation could look like structurally, fiscally, and politically — and sharing that information back with the community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS INCORPORATION -->
+  <section id="what-is">
+    <div class="container">
+      <div class="section-header center">
+        <p class="eyebrow">The Basics</p>
+        <h2>What Is Incorporation?</h2>
+        <p class="section-intro">Incorporation is the process by which an unincorporated community formally becomes a city or town. Here's what that means in plain language.</p>
+      </div>
+      <div class="explainer-grid">
+        <div class="explainer-card">
+          <div class="explainer-icon">🏛️</div>
+          <h3>Local Government</h3>
+          <p>An incorporated city has its own elected city council and mayor who make decisions about local services, budgets, land use, and policy — rather than relying on county government to manage these functions.</p>
+        </div>
+        <div class="explainer-card">
+          <div class="explainer-icon">💰</div>
+          <h3>Revenue &amp; Taxes</h3>
+          <p>Cities collect their own taxes (like sales tax) and fees. This revenue stays local and can be directed toward community priorities like roads, parks, and public safety.</p>
+        </div>
+        <div class="explainer-card">
+          <div class="explainer-icon">🚔</div>
+          <h3>Services &amp; Infrastructure</h3>
+          <p>An incorporated city can operate its own police department, manage its own roads, set zoning rules, and control development — giving residents more direct say over their neighborhood's character.</p>
+        </div>
+        <div class="explainer-card">
+          <div class="explainer-icon">🗳️</div>
+          <h3>The Process</h3>
+          <p>In Washington State, incorporation requires a feasibility study, a boundary review by the Boundary Review Board, and ultimately a public vote. The community itself decides whether to incorporate.</p>
+        </div>
+        <div class="explainer-card">
+          <div class="explainer-icon">⚖️</div>
+          <h3>Tradeoffs</h3>
+          <p>Incorporation brings more local control but also more local responsibility. Costs and services shift from the county to the new city. Understanding this balance is central to our research.</p>
+        </div>
+        <div class="explainer-card">
+          <div class="explainer-icon">📍</div>
+          <h3>South Hill Today</h3>
+          <p>Currently, South Hill is governed as an unincorporated area of Pierce County. Residents pay county taxes and receive county services, but have no locally elected city representatives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSSIBILITIES -->
+  <section id="possibilities">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Looking Ahead</p>
+        <h2>What Could Incorporation Look Like for South Hill?</h2>
+      </div>
+      <p class="section-intro-left">Our research explores a range of scenarios. Here are some of the key questions we are working to answer:</p>
+      <div class="scenarios">
+        <div class="scenario">
+          <div class="scenario-number">A</div>
+          <div class="scenario-body">
+            <h3>Fiscal Feasibility</h3>
+            <p>Could South Hill sustain itself financially as a city? We are analyzing potential tax revenues, existing service costs, and transition expenses to model what incorporation could look like on a balance sheet.</p>
+          </div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-number">B</div>
+          <div class="scenario-body">
+            <h3>Service Continuity</h3>
+            <p>How would services like roads, parks, and public safety be managed during and after a transition? We are looking at how similar communities navigated this process.</p>
+          </div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-number">C</div>
+          <div class="scenario-body">
+            <h3>Boundary Options</h3>
+            <p>What area would the city encompass? Boundary decisions affect who is included, what tax base is available, and how services are delivered. We are mapping and analyzing different potential boundaries.</p>
+          </div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-number">D</div>
+          <div class="scenario-body">
+            <h3>Governance Structure</h3>
+            <p>What kind of city government would best serve South Hill? Strong mayor? Council-manager? We are examining models that have worked in communities of similar size and character.</p>
+          </div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-number">E</div>
+          <div class="scenario-body">
+            <h3>Community Identity</h3>
+            <p>What do residents want South Hill to feel like in 20 years? Local control can preserve community character — but only if residents shape the vision. This is why your voice matters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources">
+    <div class="container">
+      <div class="section-header center">
+        <p class="eyebrow">Learn More</p>
+        <h2>Resources &amp; Reports</h2>
+        <p class="section-intro">As our research progresses, we will publish reports, maps, and data here for public access.</p>
+      </div>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <div class="resource-tag team">Our Report</div>
+          <h3>South Hill Initial Conditions Report</h3>
+          <p>Our team's in-depth look at the current demographic, fiscal, land use, and governance conditions in South Hill — the foundation for understanding what incorporation would mean here.</p>
+          <a class="resource-link" href="LCY_ICR.pdf" target="_blank" rel="noopener">&#128196; Download PDF &#8599;</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-tag team">Our Report</div>
+          <h3>Incorporation Primer</h3>
+          <p>A plain-language guide created by our team for South Hill residents — covering what incorporation is, how the process works in Washington State, and what it could mean for your community.</p>
+          <a class="resource-link" href="IncorporationPrimer.pdf" target="_blank" rel="noopener">&#128196; Download PDF &#8599;</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-tag">Study</div>
+          <h3>South Hill Governance Study (2023)</h3>
+          <p>A detailed governance study prepared for South Hill and Pierce County examining service delivery, local governance options, and what a future city structure could look like.</p>
+          <a class="resource-link" href="Final South Hill Governance Study.pdf" target="_blank" rel="noopener">&#128196; Download PDF &#8599;</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-tag external">External Resource</div>
+          <h3>WA State Incorporation Law</h3>
+          <p>Washington State's legal framework for municipal incorporation under RCW Title 35 — the statute that governs how communities like South Hill can become a city.</p>
+          <a class="resource-link" href="https://app.leg.wa.gov/RCW/default.aspx?cite=35.02" target="_blank" rel="noopener">View RCW 35.02 &#8599;</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-tag external">External Resource</div>
+          <h3>Pierce County Government</h3>
+          <p>Current county services and governance information relevant to South Hill residents, including planning, roads, and public safety.</p>
+          <a class="resource-link" href="https://www.piercecountywa.gov" target="_blank" rel="noopener">Pierce County &#8599;</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-tag external">External Resource</div>
+          <h3>Liveable City Year @ UW</h3>
+          <p>Learn more about the UW program connecting students with communities across Washington State through applied research and community engagement.</p>
+          <a class="resource-link" href="https://lcy.be.uw.edu/" target="_blank" rel="noopener">LCY @ UW &#8599;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / GET INVOLVED -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-text">
+          <p class="eyebrow light">Your Voice Matters</p>
+          <h2>Get Involved</h2>
+          <p>Whether you've lived in South Hill for decades or just moved in, your perspective shapes this research. We want to hear what you care about, what you're worried about, and what you hope for.</p>
+          <ul class="contact-ways">
+            <li>
+              <span class="contact-icon">📋</span>
+              <div>
+                <strong>Take Our Survey</strong>
+                <p>A short survey about your experience living in South Hill and your thoughts on incorporation. <em>(Link coming soon)</em></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">📅</span>
+              <div>
+                <strong>Attend Our Open House</strong>
+                <div class="open-house-highlight">
+                  <div class="oh-date">Wednesday, May 13, 2026</div>
+                  <div class="oh-detail">Open House — location details coming soon. Come learn about the research and share your perspective.</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>Reach Out Directly</strong>
+                <p>Questions, ideas, or want to collaborate? Email us at <a href="mailto:southhillfutures@uw.edu">southhillfutures@uw.edu</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form-wrap">
+          <h3>Send Us a Message</h3>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+
+            <label for="resident">Are you a South Hill resident?</label>
+            <select id="resident" name="resident">
+              <option value="">Please select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No, but I work/own property there</option>
+              <option value="nearby">I live nearby</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us your thoughts, questions, or concerns..." required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note" id="form-success" style="display:none;">Thank you! We'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-logo">South Hill Futures</p>
+        <p>A UW Studio project in partnership with<br>Liveable City Year @ UW and Pierce County.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#what-is">What Is Incorporation?</a>
+        <a href="#possibilities">Possibilities</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Get Involved</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 South Hill Futures — University of Washington Studio Project</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
