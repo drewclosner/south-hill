@@ -163,7 +163,7 @@ img { display: block; max-width: 100%; }
   position: relative;
   z-index: 2;
   max-width: 760px;
-  padding: 120px 24px 80px;
+  padding: 80px 24px 80px;
 }
 
 .hero-content h1 {
@@ -205,20 +205,26 @@ img { display: block; max-width: 100%; }
 
 /* ── Open House Banner ── */
 #open-house-banner {
+  margin-top: 64px; /* sit flush below the fixed navbar */
   background: var(--gold);
-  padding: 14px 24px;
+  padding: 16px 24px;
   text-align: center;
+  position: relative;
+  z-index: 90;
 }
 #open-house-banner p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--blue-darker);
+  line-height: 1.5;
 }
 #open-house-banner a {
   text-decoration: underline;
   text-underline-offset: 2px;
   color: var(--blue-darker);
 }
+
+/* Hero no longer needs to account for navbar offset (banner does it) */
 
 /* ── Partners Strip ── */
 #partners {
@@ -515,23 +521,24 @@ section { padding: var(--section-py) 0; }
   text-underline-offset: 2px;
 }
 
-/* Open House highlight inside contact */
+/* Event highlight boxes inside contact */
 .open-house-highlight {
-  background: rgba(244,187,90,0.15);
-  border: 1px solid rgba(244,187,90,0.35);
+  background: rgba(244,187,90,0.14);
+  border: 1px solid rgba(244,187,90,0.32);
   border-radius: 8px;
-  padding: 16px 20px;
-  margin-top: 6px;
+  padding: 14px 18px;
+  margin-top: 8px;
 }
 .open-house-highlight .oh-date {
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--gold);
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 .open-house-highlight .oh-detail {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.7);
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.55;
 }
 
 .contact-form-wrap {
