@@ -473,11 +473,16 @@ section { padding: var(--section-py) 0; }
 /* ── Contact ── */
 #contact { background: var(--blue-dark); }
 
+/* CONTACT FORM: when uncommenting form, restore .contact-box to:
+   display: grid; grid-template-columns: 1fr 1fr; max-width: var(--max-w);
+   and remove text-align: center from .contact-text and .contact-text > p */
 .contact-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: start;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  text-align: center;
 }
 
 .contact-text h2 {
@@ -488,27 +493,43 @@ section { padding: var(--section-py) 0; }
 }
 .contact-text > p {
   color: rgba(255,255,255,0.75);
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   line-height: 1.75;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-ways {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+/* Email row spans full width and is centered */
+.contact-ways li.contact-email-row {
+  grid-column: 1 / -1;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  justify-content: center;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 .contact-ways li {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   align-items: flex-start;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 20px;
 }
-.contact-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+.contact-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
 .contact-ways strong {
   display: block;
   color: var(--white);
   font-size: 0.95rem;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .contact-ways p {
   font-size: 0.88rem;
@@ -644,7 +665,7 @@ footer {
   .two-col { grid-template-columns: 1fr; gap: 40px; }
   .explainer-grid { grid-template-columns: repeat(2, 1fr); }
   .resource-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-box { grid-template-columns: 1fr; gap: 48px; }
+  .contact-ways { grid-template-columns: 1fr; }
   .partner-divider { display: none; }
 }
 
