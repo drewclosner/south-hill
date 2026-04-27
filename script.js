@@ -15,16 +15,14 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
-// Contact form mock submit
-function handleSubmit(e) {
-  e.preventDefault();
-  const success = document.getElementById('form-success');
-  success.style.display = 'block';
-  e.target.reset();
-  setTimeout(() => { success.style.display = 'none'; }, 5000);
-}
-
 // Scroll-triggered fade-in
+const style = document.createElement('style');
+style.textContent = `
+  .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+`;
+document.head.appendChild(style);
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -32,19 +30,11 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 
 document.querySelectorAll(
-  '.info-card, .explainer-card, .scenario, .resource-card'
+  '.info-card, .explainer-card, .scenario, .resource-card, .contact-ways li'
 ).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
 });
-
-// Inject fade-in CSS dynamically
-const style = document.createElement('style');
-style.textContent = `
-  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
-  .fade-in.visible { opacity: 1; transform: translateY(0); }
-`;
-document.head.appendChild(style);
