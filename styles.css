@@ -441,7 +441,7 @@ section { padding: var(--section-py) 0; }
 .resource-link:hover { color: var(--black); }
 
 /* ── Contact / Get Involved ── */
-#contact { background: var(--black); }
+#contact { background: var(--gray-light); }
 
 .contact-box {
   max-width: 860px;
@@ -450,11 +450,11 @@ section { padding: var(--section-py) 0; }
 .contact-text { text-align: center; }
 .contact-text h2 {
   font-size: clamp(1.8rem, 3vw, 2.4rem);
-  color: var(--white);
+  color: var(--text-dark);
   margin-bottom: 14px;
 }
 .contact-text > p {
-  color: rgba(255,255,255,0.65);
+  color: var(--text-body);
   margin-bottom: 40px;
   line-height: 1.8;
   max-width: 560px;
@@ -473,8 +473,8 @@ section { padding: var(--section-py) 0; }
   display: flex;
   gap: 14px;
   align-items: flex-start;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--white);
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 20px;
 }
@@ -483,7 +483,7 @@ section { padding: var(--section-py) 0; }
   justify-content: center;
   background: transparent;
   border: none;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid var(--border);
   border-radius: 0;
   padding-top: 24px;
   margin-top: 4px;
@@ -494,19 +494,19 @@ section { padding: var(--section-py) 0; }
   font-family: var(--font-heading);
   font-size: 0.88rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--text-dark);
   margin-bottom: 6px;
 }
 .contact-ways p {
   font-size: 0.84rem;
-  color: rgba(255,255,255,0.55);
+  color: var(--text-body);
   line-height: 1.62;
 }
-.contact-ways a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+.contact-ways a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
 
 .open-house-highlight {
-  background: rgba(251,191,88,0.12);
-  border: 1px solid rgba(251,191,88,0.28);
+  background: rgba(137,164,197,0.1);
+  border: 1px solid rgba(137,164,197,0.25);
   border-radius: 5px;
   padding: 12px 15px;
   margin-top: 8px;
@@ -515,12 +515,12 @@ section { padding: var(--section-py) 0; }
   font-family: var(--font-heading);
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--gold);
+  color: var(--blue);
   margin-bottom: 5px;
 }
 .open-house-highlight .oh-detail {
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.62);
+  color: var(--text-body);
   line-height: 1.6;
 }
 
